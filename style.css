@@ -19,19 +19,28 @@ h1,h5{
 body header ul{
     display: flex;
     list-style: none;
-    justify-content: space-around;
-    align-items: center;
     background-color: #b3b2b2;
     height:3em;
     font-size: 1em;
     border-radius: 5px;
     margin: 0.8em 0;
+    overflow: hidden;
 }
 body header ul li{
     color:#ea3232;
     background-color: #b3b2b2;
     font-size: 14px;
     font-weight: 600;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+body header ul li:hover{
+    background-color: #ea3232;
+    color: white;
 }
 h4{
     color:#ea3232;
@@ -82,3 +91,23 @@ hr {
 section div div .margiright{
     margin-right: 3.5em;
 } 
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    display: flex;
+}
+
+footer div a{
+    margin-right: 3%;
+}
+footer div a img{
+    width: 75%;
+}
+footer div a .youtube{
+    width:64%;
+    border-radius: 50%;
+    background-color: #f44336;
+    margin-top: 3px;
+}
